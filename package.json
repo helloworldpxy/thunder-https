@@ -1,0 +1,37 @@
+{
+  "name": "thunder-https",
+  "version": "2.0.0",
+  "description": "迅雷链接转换工具 - 支持多协议解码的桌面应用",
+  "main": "src/main/index.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "concurrently \"vite\" \"wait-on http://localhost:5173 && electron .\"",
+    "build": "vite build",
+    "electron:build": "vite build && electron-builder",
+    "electron:build:win": "vite build && electron-builder --dir && node set-icon.js"
+  },
+  "dependencies": {
+    "vue": "^3.4.0",
+    "vue-i18n": "^9.9.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.0",
+    "concurrently": "^8.2.0",
+    "electron": "^33.4.11",
+    "electron-builder": "^25.0.0",
+    "rcedit": "^5.0.1",
+    "to-ico": "^1.1.5",
+    "vite": "^5.4.0",
+    "wait-on": "^7.2.0"
+  },
+  "author": "HelloWorld05",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/helloworldpxy/thunder-https"
+  },
+  "allowScripts": {
+    "electron@33.4.11": true,
+    "esbuild@0.21.5": true
+  }
+}

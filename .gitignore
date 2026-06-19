@@ -1,0 +1,9 @@
+node_modules/
+dist/
+dist-output/
+build/icon.png
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
