@@ -59,15 +59,24 @@
 ### 环境要求
 - Node.js 18+
 - npm 或 yarn
+- Git
+
+### 获取源码
+```bash
+git clone https://github.com/helloworldpxy/thunder-https.git
+cd thunder-https
+```
 
 ### 开发运行
 ```bash
-# 安装依赖
+# 安装依赖（node_modules 不在仓库中，需要手动安装）
 npm install
 
 # 启动开发服务器
 npm run dev
 ```
+
+> 注意：node_modules 和 dist 目录已在 .gitignore 中排除，不会提交到 GitHub。
 
 ### 打包构建
 ```bash
@@ -193,15 +202,24 @@ A professional download link conversion tool that supports decoding and conversi
 ### Prerequisites
 - Node.js 18+
 - npm or yarn
+- Git
+
+### Get Source Code
+```bash
+git clone https://github.com/helloworldpxy/thunder-https.git
+cd thunder-https
+```
 
 ### Run in Development
 ```bash
-# Install dependencies
+# Install dependencies (node_modules is not in repo, install manually)
 npm install
 
 # Start dev server
 npm run dev
 ```
+
+> Note: node_modules and dist directories are excluded via .gitignore and not included in the repository.
 
 ### Build
 ```bash
